@@ -1,0 +1,219 @@
+@media screen and (max-width: 767px) {
+    footer {
+        background-color: #14295e;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        width: calc(100% - 40px);
+        margin: 40px;
+    }
+
+    footer > nav > .logo {
+        width: 150px;
+    }
+
+    footer > nav > .logo > img {
+        width: 100%;
+    }
+
+    footer ul {
+        list-style: none;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        white-space: nowrap;
+        opacity: 0.6;
+    }
+
+    footer .menu li a .img-box {
+        position: relative;
+        width: 6px;
+    }
+
+    footer .menu li a .img-box img {
+        width: 100%;
+    }
+
+    footer .line {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #e84c2e;
+    }
+
+    footer .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .menu li {
+        box-sizing: border-box; /* 確保元素的寬度包括內邊距和邊框 */
+    }
+
+    footer .supplier-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .supplier-menu p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .supplier-menu li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .supplier-menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .separate {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        background-color: #14295e;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
+
+    footer > nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        max-width: 1280px;
+        width: calc(100% - 40px);
+    }
+
+    footer > nav > .logo {
+        width: 150px;
+    }
+
+    footer > nav > .logo > img {
+        width: 100%;
+    }
+
+    footer ul {
+        list-style: none;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        white-space: nowrap;
+    }
+
+    footer .menu li a .img-box {
+        position: relative;
+        width: 6px;
+    }
+
+    footer .menu li a .img-box img {
+        width: 100%;
+    }
+
+    footer .line {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #e84c2e;
+    }
+
+    footer .menu {
+        /* width: 390px; */
+        display: flex;
+        gap: 40px;
+    }
+
+    footer .menu li {
+        width: 50%; /* 每行兩個元素，佔據 50% 寬度 */
+        box-sizing: border-box; /* 確保元素的寬度包括內邊距和邊框 */
+    }
+
+    footer .supplier-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .supplier-menu p {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        white-space: nowrap;
+    }
+
+    .supplier-menu ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .supplier-menu ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .separate {
+        width: 0 !important;
+    }
+}

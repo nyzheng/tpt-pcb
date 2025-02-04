@@ -1,0 +1,282 @@
+@media screen and (max-width: 767px) {
+    #menu-control {
+        display: none;
+    }
+
+    #menu-control:checked ~ header > nav > .menu-container {
+        right: 0;
+    }
+
+    .expand {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .expand::after {
+        content: '';
+        background-color: #ffffff;
+        width: 10px;
+        height: 10px;
+        display: block;
+        clip-path: polygon(50% 25%, 0 75%, 100% 75%);
+        transition: all 0.5s;
+    }
+
+    .close {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .close::after {
+        content: '';
+        background-color: #ffffff;
+        width: 10px;
+        height: 10px;
+        display: block;
+        clip-path: polygon(50% 75%, 0 25%, 100% 25%);
+        transition: all 0.5s;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: #143159; /* Ensure visibility of menu button */
+    }
+
+    header #MenuControl {
+        position: fixed;
+        right: 20px;
+        top: 40px;
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer; /* Added for better UX */
+    }
+
+    header #MenuControl span {
+        width: 32px;
+        height: 2px;
+        background-color: #ffffff;
+        display: block;
+    }
+
+    header #MenuControl span + span {
+        margin-top: 7px;
+    }
+
+    header nav .logo {
+        width: 136px;
+        height: 30px;
+    }
+
+    header nav .logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between; /* Adjusted for better alignment */
+        align-items: center;
+        padding: 0 20px; /* Adjusted padding */
+    }
+
+    header nav > .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 6;
+        transition: right 0.5s;
+        background-color: #143159;
+        height: 100vh;
+    }
+
+    header nav > .menu-container > ul {
+        list-style: none;
+        padding: 70px 0px 20px 0px;
+        margin: 0; /* Reset margin */
+        width: 100%;
+        overflow: auto;
+    }
+
+    header nav > .menu-container > ul > li {
+        /* width: 100%; */
+        width: 160px;
+        position: relative; /* Ensure submenu appears relative to the parent */
+        /* text-align: center; */
+        /* padding-left: 40%; */
+        left: 60%;
+        transform: translateX(-60%);
+    }
+
+    header nav > .menu-container > ul > li > a {
+        /* width: 100%; */
+        text-decoration: none;
+        color: #ffffff;
+        padding: 20px 0;
+        display: block;
+    }
+
+    header .menu-container .menu li a .img-box {
+        width: 20px; /* Adjusted width */
+        margin-right: 10px; /* Adjusted margin for spacing */
+    }
+
+    header > .menu-container > .menu li a .img-box img {
+        width: 100%;
+    }
+
+    .pc-submenu {
+        display: none;
+        position: static; /* Position relative to parent, and static for better animation handling */
+        background-color: #143159; /* Match the background color */
+        width: 100%;
+        z-index: 7;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .pc-submenu li {
+        width: 100%;
+    }
+
+    .pc-submenu li a {
+        padding: 10px 20px;
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .menu-container ul.menu li.open .pc-submenu {
+        display: block;
+        max-height: 500px; /* 設置您希望的最大高度 */
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menu-control {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        position: fixed !important;
+        /* background-color: #143159; */
+    }
+    header nav > .logo {
+        width: 200px;
+    }
+    header nav > .logo img {
+        width: 100%;
+    }
+
+    header nav {
+        display: flex;
+        max-width: 1280px;
+        width: calc(100% - 40px);
+        gap: 40px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav > .menu-container {
+        width: calc(100% - 240px);
+    }
+
+    header nav > .menu-container > ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        list-style: none;
+        width: 100%;
+        height: 100px;
+    }
+
+    .mobile-submenu {
+        display: none;
+    }
+
+    .location-container {
+        position: relative;
+    }
+
+    .pc-submenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        position: absolute;
+        top: 70px;
+        z-index: 11;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 09px #000000;
+        padding: 10px 5px;
+        border-top: #77cd4a 3px solid;
+        display: none;
+    }
+
+    .pc-submenu > li > a {
+        text-decoration: none;
+        color: #000000;
+        white-space: nowrap;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .pc-submenu > li > a > span {
+        color: #828282;
+    }
+
+    .pc-submenu > .line {
+        width: 90%;
+        height: 2px;
+        background-color: #d9d9d9;
+    }
+
+    header nav > .menu-container > ul > li > a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 40px 20px;
+        max-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    header nav > .menu-container > ul > li:hover > .pc-submenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .menu-container .menu li a .img-box {
+        display: none;
+    }
+}

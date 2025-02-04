@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>志超科技股份有限公司</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/finance.css" />
+
+        <style>
+            body {
+                position: relative;
+            }
+
+            #header {
+                background-color: transparent !important;
+                position: absolute;
+                top: 0;
+                z-index: 10;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input id="menu-control" type="checkbox" />
+        <header>
+            <label id="MenuControl" for="menu-control">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <a href="/">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="" />
+                    </div>
+                </a>
+
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li class="location-container">
+                            <a href="javascript:;" class="location">
+                                <span class="close">關於志超</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="info.html"> <span>公司簡介</span></a>
+                                </li>
+                                <li>
+                                    <a href="concept.html"> <span>經營理念</span></a>
+                                </li>
+                                <li>
+                                    <a href="location.html"> <span>營運據點</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <span>產品與服務</span>
+                            </a>
+                        </li>
+
+                        <li class="location-container">
+                            <a href="javascript:;" class="location">
+                                <span class="close">永續發展</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="sustainable.html"> <span>永續管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="green.html"> <span>綠色永續</span></a>
+                                </li>
+                                <li>
+                                    <a href="partner.html"> <span>合作夥伴</span></a>
+                                </li>
+                                <li>
+                                    <a href="management.html"> <span>公司治理</span></a>
+                                </li>
+                                <li>
+                                    <a href="workplace.html"> <span>幸福職場</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="tech.html">
+                                <span>技術與研發</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news.html">
+                                <span>活動訊息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="close">投資人專區</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="finance.html"> <span>近期財報</span></a>
+                                </li>
+                                <li>
+                                    <a href="revenue.html"> <span>每月營收</span></a>
+                                </li>
+                                <li>
+                                    <a href="major.html"> <span>重大訊息</span></a>
+                                </li>
+                                <li>
+                                    <a href="corporation.html"> <span>法人說明會資訊</span></a>
+                                </li>
+                                <li>
+                                    <a href="stock.html"> <span>股務資訊</span></a>
+                                </li>
+                                <li>
+                                    <a href="relationship.html"> <span>投資人聯絡窗口</span></a>
+                                </li>
+                                <li>
+                                    <a href="shareholder.html"> <span>主要股東名單</span></a>
+                                </li>
+                                <li>
+                                    <a href="dividend.html"> <span>歷年股利分派</span></a>
+                                </li>
+                                <li>
+                                    <a href="meeting.html"> <span>股東會資訊</span></a>
+                                </li>
+                                <li>
+                                    <a href="rules.html"> <span>公司重要規章制度</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-container">
+                            <a href="javascript:;" class="location">
+                                <span class="close">人力資源</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="welfare.html"> <span>員工福利與照護</span></a>
+                                </li>
+                                <li>
+                                    <a href="recruitment.html"> <span>人才招募</span></a>
+                                </li>
+                                <li>
+                                    <a href="development.html"> <span>訓練與發展</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="financial-container">
+            <div class="area1">
+                <div class="content">
+                    <div class="banner-box">
+                        <h2>投資人專區</h2>
+                        <!-- <img src="images/stock-banner.png" alt="" /> -->
+                    </div>
+                </div>
+            </div>
+            <div class="area2">
+                <div class="content">
+                    <div class="container">
+                        <span style="font-size: 24px">近期財報</span>
+                        <div class="item-box">
+                            <div class="item table-box">
+                                <table class="grey" style="width: 100%">
+                                    <tr>
+                                        <td class="grey bg-grey bd-t-blue">年度</td>
+                                        <td class="lightblue bg-grey bd-t-blue" style="font-size: 20px">第一季</td>
+                                        <td class="lightblue bg-grey bd-t-blue" style="font-size: 20px">第二季</td>
+                                        <td class="lightblue bg-grey bd-t-blue" style="font-size: 20px">第三季</td>
+                                        <td class="lightblue bg-grey bd-t-blue" colspan="4" style="font-size: 20px">
+                                            第四季
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="grey bg-grey bd-t-blue">類型</td>
+                                        <td class="grey bg-grey bd-t-blue">合併</td>
+                                        <td class="grey bg-grey bd-t-blue">合併</td>
+                                        <td class="grey bg-grey bd-t-blue">合併</td>
+                                        <td class="grey bg-grey bd-t-blue">合併(中)</td>
+                                        <td class="grey bg-grey bd-t-blue">合併(英)</td>
+                                        <td class="grey bg-grey bd-t-blue">個體(中)</td>
+                                        <td class="grey bg-grey bd-t-blue">個體(英)</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">113</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2024-1.pdf"
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2024-1.pdf "
+                                                class="lightblue underline"
+                                            ></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">112</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2023-1.pdf "
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2023-2.pdf"
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2023-3.pdf"
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2023-4.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2023-4EN.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2023-5.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2023-5EN.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">111</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2022-1.pdf "
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2022-2.pdf "
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2022-3.pdf"
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2022-4.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2022-4EN.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2022-5.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2022-5EN.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">110</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2021-1.pdf"
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2021-2.pdf"
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2021-3.pdf "
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2021-4.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2021-4EN.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2021-5.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2021-5EN.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">109</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2020-1.pdf "
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2020-2.pdf"
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2020-3.pdf "
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2020-4.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2020-4EN.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2020-5.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2020-5EN.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">108</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2019-1.pdf "
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2019-2.pdf "
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2019-3.pdf"
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2019-4.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2019-5.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">107</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2018-1.pdf"
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2018-2.pdf "
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2018-3.pdf "
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2018-4.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2018-5.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">106</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2017-1.pdf"
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2017-2.pdf "
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2017-3.pdf "
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2017-4.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2017-5.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">105</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2016-1.pdf "
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2016-2.pdf "
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2016-3.pdf "
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2016-4.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2016-5.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">104</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2015-1.pdf"
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2015-2.pdf"
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2015-3.pdf"
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2015-4.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2015-5.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">103</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2014-1.pdf "
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2014-2.pdf "
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2014-3.pdf "
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2014-4.pdf "
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2014-5.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey">102</td>
+                                        <td class="bd-r-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2013-1.pdf"
+                                                class="lightblue underline"
+                                                >Q1</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2013-2.pdf"
+                                                class="lightblue underline"
+                                                >Q2</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2013-3.pdf "
+                                                class="lightblue underline"
+                                                >Q3</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2013-4.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td class="bd-r-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                        <td class="bd-r-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2013-5.pdf"
+                                                class="lightblue underline"
+                                                >Q4</a
+                                            >
+                                        </td>
+                                        <td>
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area3">
+                <div class="content">
+                    <div class="container">
+                        <span style="font-size: 24px">歷年年報</span>
+                        <div class="item-box">
+                            <div class="item table-box">
+                                <table class="grey" style="width: 100%; margin: auto">
+                                    <tr>
+                                        <td class="lightblue bg-grey bd-t-blue" style="font-size: 20px">公司年報</td>
+                                        <td class="lightblue bg-grey bd-t-blue" style="font-size: 20px">中文</td>
+                                        <td class="lightblue bg-grey bd-t-blue" style="font-size: 20px">英文</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">112年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2023-final.pdf"
+                                                class="lightblue underline"
+                                                >2023</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2023EN-final.pdf"
+                                                class="lightblue underline"
+                                                >2023-EN</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">111年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2022-final.pdf "
+                                                class="lightblue underline"
+                                                >2022</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2022EN-final.pdf "
+                                                class="lightblue underline"
+                                                >2022-EN</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">110年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2021-final.pdf "
+                                                class="lightblue underline"
+                                                >2021</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2021EN-final.pdf"
+                                                class="lightblue underline"
+                                                >2021-EN</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">109年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2020-final.pdf  "
+                                                class="lightblue underline"
+                                                >2020</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2020EN-final.pdf "
+                                                class="lightblue underline"
+                                                >2020-EN</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">108年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2019-final.pdf  "
+                                                class="lightblue underline"
+                                                >2019</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">107年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2018-final.pdf "
+                                                class="lightblue underline"
+                                                >2018</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">106年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2017-final.pdf "
+                                                class="lightblue underline"
+                                                >2017</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">105年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2016-final.pdf "
+                                                class="lightblue underline"
+                                                >2016</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">104年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2015-final.pdf "
+                                                class="lightblue underline"
+                                                >2015</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey bd-b-grey">103年度公司年報</td>
+                                        <td class="bd-r-grey bd-b-grey">
+                                            <a
+                                                href=" http://www.tpt-pcb.com.tw/pdf/2014-final.pdf "
+                                                class="lightblue underline"
+                                                >2014</a
+                                            >
+                                        </td>
+                                        <td class="bd-b-grey">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bd-r-grey">102年度公司年報</td>
+                                        <td class="bd-r-grey">
+                                            <a
+                                                href="http://www.tpt-pcb.com.tw/pdf/2013-final.pdf  "
+                                                class="lightblue underline"
+                                                >2013</a
+                                            >
+                                        </td>
+                                        <td class="">
+                                            <a href=" " class="lightblue underline"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="info.html">
+                                <span>關於志超</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <span>產品與服務</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sustainable.html">
+                                <span>永續發展</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tech.html">
+                                <span>技術與研發</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news.html">
+                                <span>活動訊息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="stock.html">
+                                <span>投資人專區</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="welfare.html">
+                                <span>人力資源</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="logo">
+                        <img src="images/footer-logo.png" alt="" />
+                    </div>
+                    <div class="supplier-menu">
+                        <p>總公司及工廠地址：桃園市平鎮區 32461 平鎮工業區工業二路12號</p>
+                        <p>|</p>
+                        <p>電 話：886-3-4698860(代表號)</p>
+                        <p>|</p>
+                        <p>傳 真：886-3-4698277</p>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+    </body>
+    <script src="js/menu.js"></script>
+</html>

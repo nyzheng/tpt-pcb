@@ -1,0 +1,124 @@
+.t-nowrap {
+    white-space: nowrap;
+}
+
+.t-l {
+    justify-content: flex-start;
+}
+
+.m-t-nowrap {
+    white-space: nowrap;
+}
+
+.m-t-l {
+    justify-content: flex-start;
+}
+
+.area5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area5 > .content {
+    width: calc(100% - 60px);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.area5 > .content > .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 10px;
+}
+.area5 > .content > .container > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+
+/* 底線 */
+.area5 > .content > .container > span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #5db430;
+    margin-top: 5px;
+}
+
+.area5 > .content > .container > .item-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.area5 > .content > .container > .item-box > .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.area5 > .content > .container > .item-box > .item > p {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.area5 > .content > .container > .item-box > .item > img {
+    width: 100%;
+}
+
+.area5 > .content > .container > .item-box > .item > p > a {
+    font-size: 18px;
+    line-height: 2em;
+    color: #4aaecd;
+}
+
+.area5 > .content > .container > a {
+    width: fit-content;
+    text-align: center;
+    background-color: #5db430;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 40px 0 0 0px;
+}
+
+.area5 > .content > .container > p {
+    text-align: center;
+}
+
+.area5 > .content > .container > ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #4aaecd;
+    gap: 40px;
+    margin: 40px 0 0 0;
+}
+.area5 > .content > .container > ul > li > a {
+    color: #4aaecd;
+}
+.area5 .img-box {
+    width: 100%;
+}
+.area5 .img-box > img {
+    width: 100%;
+    margin: 10px 0 0 0;
+}

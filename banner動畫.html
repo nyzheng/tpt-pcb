@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .banner-box {
+                position: relative;
+            }
+            .banner-text {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 140px;
+                transition: right 2s; /* 添加过渡效果 */
+            }
+
+            /* banner動畫 */
+            .banner-box {
+                overflow: hidden;
+                width: 100%; /* 确保容器适应图像大小 */
+                height: 100%; /* 确保容器适应图像大小 */
+            }
+
+            #banner-image {
+                transform: scale(1); /* 初始缩放为1，即正常大小 */
+                transition: transform 2s; /* 添加过渡效果 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a class="more" href="javascript:;">
+                了解更多
+                <img class="arrow-img" src="images/right-arrow.png" alt="" />
+            </a>
+        </div>
+    </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var bannerImage = document.getElementById('banner-image')
+            var bannerBox = document.querySelector('.banner-box')
+            var bannerText = document.querySelector('.banner-text')
+
+            // 獲取容器和圖像的寬度和高度
+            var containerWidth = bannerBox.offsetWidth
+            var containerHeight = bannerBox.offsetHeight
+            var imageWidth = bannerImage.naturalWidth
+            var imageHeight = bannerImage.naturalHeight
+
+            // 計算圖像放大後的尺寸
+            var scaleFactor = Math.min(containerWidth / imageWidth, containerHeight / imageHeight) * 1.1
+
+            // 設置圖像的初始縮放
+            bannerImage.style.transform = 'scale(' + scaleFactor + ')'
+            bannerText.style.right = '240px' // 移動到左邊 100px 外
+        })
+    </script>
+</html>

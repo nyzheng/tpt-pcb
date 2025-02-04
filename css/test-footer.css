@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e9ecef;
+        padding: 60px 0;
+    }
+
+    footer > .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > .content > .footer-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    footer > .content > .footer-box > .footer-1 {
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer > .content > .footer-box > .footer-1 > .logo {
+        width: 120px;
+    }
+    footer > .content > .footer-box > .footer-1 > .logo > img {
+        width: 100%;
+    }
+
+    footer > .content > .footer-box > .footer-1 > .social {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer > .content > .footer-box > .footer-2 {
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer > .content > .footer-box > .footer-2 > img {
+        width: 100%;
+    }
+    footer > .content > .footer-box > .footer-3 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer > .content > .footer-box > .footer-3 > .item {
+        display: flex;
+    }
+    footer > .content > .footer-box > .footer-3 > .item > img {
+        width: 20px;
+        height: 20px;
+    }
+    footer > .content > .footer-box > .footer-3 > .item > p {
+        white-space: nowrap;
+        font-weight: 700;
+        margin: 0 0 0 20px;
+    }
+    footer > .content > .footer-box > .footer-4 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    footer > .content > .footer-box > .footer-4 > .item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer > .content > .footer-box > .footer-4 > .item > a {
+        font-weight: 700;
+    }
+    footer > .content > .copyright {
+        margin: 40px 0 0 0;
+        font-weight: 700;
+    }
+}

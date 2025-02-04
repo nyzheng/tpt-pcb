@@ -1,0 +1,1120 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft JhengHei';
+    font-size: 16px;
+}
+.grey {
+    color: #828282;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    background-color: #143159 !important;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.banner-box > h2 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+    .tech-container {
+        width: 100%;
+    }
+
+    .icon {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        z-index: 5;
+    }
+    .icon > a > img {
+        max-width: 60px;
+    }
+
+    /* ----- */
+
+    .area1 {
+        width: 100%;
+        margin: 70px 0 0 0;
+    }
+    .area1 > .content {
+        width: 100%;
+    }
+    .area1 > .content > .banner-box {
+        width: 100%;
+        height: 500px;
+        background-image: url('/images/m-tech-banner.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area1 > .content > .banner-box img {
+        width: 100%;
+    }
+
+    /* ----- */
+
+    .area2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area2 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area2 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+        gap: 10px;
+    }
+
+    .area2 > .content > .container > .img-box {
+        width: 100%;
+    }
+    .area2 > .content > .container > .area2-img-box > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+    }
+
+    /* 底線 */
+    .area2 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area2 > .content > .container > .item-box {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .area2 > .content > .container > .item-box > .item {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .area2 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area2 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+    }
+
+    /* ----- */
+
+    .area3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .area3 > .area3-img-box {
+        overflow: hidden;
+        width: 100%; /* 确保容器适应图像大小 */
+        flex: 3;
+        position: relative;
+    }
+
+    #area3-img {
+        width: 100%;
+        height: 600px;
+    }
+
+    /* #area3-img {
+    width: 100%;
+    position: relative;
+    transform: scale(1); 
+    transition: transform 2s; 
+} */
+
+    .area3 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .area3 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .area3 > .content > .container > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+        color: #ffffff;
+    }
+
+    .area3 > .content > .container > p {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    /* 底線 */
+    .area3 > .content > .container > span::before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 20px;
+        background-color: #5db430;
+        margin: 0 10px 0 0;
+    }
+
+    .area3 > .content > .container > .item-box {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .area3 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .area3 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area3 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+    }
+
+    /* ----- */
+
+    .area4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 60px 0;
+    }
+
+    .area4 > .content {
+        width: calc(100% - 140px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area4 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area4 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area4 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+    }
+    .area4 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area4 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area4 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .area4 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 0 0 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .area4 > .content > .container > .item-box > .item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .area4 > .content > .container > .item-box > .item > img {
+        width: 50px;
+        height: 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .area4 > .content > .container > .item-box > .item > span {
+        font-size: 18px;
+    }
+    .area4 > .content > .container > .item-box > .item > div {
+        height: 100px;
+    }
+
+    .area4 > .content > .container > .item-box > .item > div > p {
+        font-size: 12px;
+        text-align: center;
+        line-height: 2em;
+    }
+
+    /* ----- */
+
+    .area5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        background-color: #d9d9d9;
+    }
+
+    .area5 > .background-image {
+        width: 100%;
+        height: 700px;
+        position: relative;
+        display: none;
+    }
+
+    .area5 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+    }
+
+    .area5 > .content > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .area5 > .content > .container > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+    }
+
+    .area5 > .content > .container > p {
+        font-size: 16px;
+    }
+
+    /* 底線 */
+    .area5 > .content > .container > span::before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 20px;
+        background-color: #5db430;
+        margin: 0 10px 0 0;
+    }
+
+    .area5 > .content > .container > p {
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    /* ----- */
+
+    .area6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .area6 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .area6 > .content > .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .area6 > .content > .container > .left {
+        width: 100%;
+    }
+    .area6 > .content > .container > .left > span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 30px 0;
+    }
+
+    .area6 > .content > .container > .left > p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    /* 底線 */
+    .area6 > .content > .container > .left > span::before {
+        content: '';
+        display: flex;
+        width: 8px;
+        height: 20px;
+        background-color: #5db430;
+        margin: 0 10px 0 0;
+    }
+
+    .area6 > .content > .container > .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin: 40px 0;
+    }
+
+    .area6 > .content > .container > .right > .img-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .area6 > .content > .container > .right > .img-box > img {
+        width: 100%;
+    }
+
+    .area6 > .content > .container > p {
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    /* ----- */
+
+    .area7 {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/images/m-tech11.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area7 > .background-image {
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+    .area7 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area7 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .area7 > .content > .container > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+        color: #ffffff;
+    }
+
+    .area7 > .content > .container > p {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .area7 > .content > .container > .item-box {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .area7 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .area7 > .content > .container > span {
+        font-size: 28px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .area7 > .content > .container > p {
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tech-container {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+    }
+
+    .icon {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        z-index: 5;
+    }
+    .icon > a > img {
+        max-width: 60px;
+    }
+
+    .area1 {
+        width: 100%;
+    }
+    .area1 > .content {
+        width: 100%;
+    }
+    .area1 > .content > .banner-box {
+        width: 100%;
+        height: 500px;
+        background-image: url('/images/tech-banner.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area1 > .content > .banner-box img {
+        width: 100%;
+    }
+    /* ----- */
+
+    .area2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area2 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area2 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+        gap: 10px;
+    }
+
+    .area2 > .content > .container > .img-box {
+        width: 100%;
+    }
+    .area2 > .content > .container > .area2-img-box > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+    }
+
+    /* 底線 */
+    .area2 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area2 > .content > .container > .item-box {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .area2 > .content > .container > .item-box > .item {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .area2 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area2 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+    }
+
+    /* ----- */
+
+    .area3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .area3 > .area3-img-box {
+        overflow: hidden;
+        width: 100%; /* 确保容器适应图像大小 */
+        flex: 3;
+        position: relative;
+    }
+
+    #area3-img {
+        width: 100%;
+        height: 700px;
+        transform: scale(1);
+        transition: transform 2s ease;
+    }
+
+    /* #area3-img {
+        width: 100%;
+        position: relative;
+        transform: scale(1); 
+        transition: transform 2s; 
+    } */
+
+    .area3 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .area3 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .area3 > .content > .container > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+        color: #ffffff;
+    }
+
+    .area3 > .content > .container > p {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    /* 底線 */
+    .area3 > .content > .container > span::before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 20px;
+        background-color: #5db430;
+        margin: 0 10px 0 0;
+    }
+
+    .area3 > .content > .container > .item-box {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .area3 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .area3 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area3 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+    }
+
+    /* ----- */
+
+    .area4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area4 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area4 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+        gap: 10px;
+    }
+
+    .area4 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area4 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+    }
+    .area4 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area4 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area4 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .area4 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 0 0 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .area4 > .content > .container > .item-box > .item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .area4 > .content > .container > .item-box > .item > img {
+        width: 50px;
+        height: 50px;
+        margin: 0 0 40px 0;
+    }
+
+    .area4 > .content > .container > .item-box > .item > span {
+        font-size: 18px;
+    }
+    .area4 > .content > .container > .item-box > .item > div {
+        height: 100px;
+    }
+
+    .area4 > .content > .container > .item-box > .item > div > p {
+        font-size: 12px;
+        text-align: center;
+        line-height: 2em;
+    }
+
+    /* ----- */
+
+    .m-background-image {
+        display: none;
+    }
+
+    .area5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area5 > .background-image {
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+    .area5 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+    }
+
+    .area5 > .content > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0 0 100px;
+    }
+    .area5 > .content > .container > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+    }
+
+    .area5 > .content > .container > p {
+        font-size: 16px;
+    }
+
+    /* 底線 */
+    .area5 > .content > .container > span::before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 20px;
+        background-color: #5db430;
+        margin: 0 10px 0 0;
+    }
+
+    .area5 > .content > .container > p {
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    /* ----- */
+
+    .area6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    .area6 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .area6 > .content > .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 100px;
+    }
+    .area6 > .content > .container > .left > span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 30px 0;
+    }
+
+    .area6 > .content > .container > .left > p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    /* 底線 */
+    .area6 > .content > .container > .left > span::before {
+        content: '';
+        display: flex;
+        width: 8px;
+        height: 20px;
+        background-color: #5db430;
+        margin: 0 10px 0 0;
+    }
+
+    .area6 > .content > .container > .right {
+        display: flex;
+        gap: 40px;
+    }
+
+    .area6 > .content > .container > .right > .img-box {
+        display: flex;
+        align-items: flex-end;
+    }
+    .area6 > .content > .container > .right > img {
+        width: 100%;
+    }
+
+    .area6 > .content > .container > p {
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    /* ----- */
+
+    .area7 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        background-image: url('/images/tech11.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+    }
+
+    .area7 > .background-image {
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+    .area7 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .area7 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .area7 > .content > .container > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+        color: #ffffff;
+    }
+
+    .area7 > .content > .container > p {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .area7 > .content > .container > .item-box {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .area7 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .area7 > .content > .container > span {
+        font-size: 28px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .area7 > .content > .container > p {
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}

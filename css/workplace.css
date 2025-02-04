@@ -1,0 +1,1537 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft JhengHei';
+    font-size: 16px;
+}
+.grey {
+    color: #828282;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    background-color: #143159 !important;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+.banner-box {
+    position: relative;
+}
+
+.banner-box > h2 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+/* 表格樣式 */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: #ffffff 2px solid;
+    font-size: 16px;
+    /* white-space: nowrap; */
+    /* width: 120px; */
+}
+
+.text-left {
+    text-align: left;
+}
+.pdf-download {
+    background-color: #d9d9d9;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    border-radius: 1px;
+}
+.lightblue {
+    color: #4aaecd !important;
+}
+.bg-grey {
+    background-color: #f5f5f5;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-darkgrey {
+    background-color: #f4f4f4;
+}
+
+.bd-t-blue {
+    border-top: #4aaecd solid 3px !important;
+    border-collapse: separate;
+}
+.bd-l-blue {
+    border-left: #4aaecd solid 2px !important;
+    border-collapse: separate;
+}
+
+.bd-t-grey {
+    border-top: #d9d9d9 solid 2px !important;
+}
+.bd-b-grey {
+    border-bottom: #828282 solid 2px !important;
+}
+.bd-r-grey {
+    border-right: #828282 solid 2px !important;
+}
+.bd-l-grey {
+    border-left: #828282 solid 2px !important;
+}
+
+.button {
+    background: #d9d9d9;
+    color: #000000;
+    padding: 10px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* 添加漸變效果 */
+}
+
+.button:hover {
+    background: #5db430;
+}
+
+td > p {
+    line-height: 2em;
+}
+
+@media screen and (max-width: 767px) {
+    .m-t-nowrap {
+        white-space: nowrap;
+    }
+
+    .m-t-l {
+        justify-content: flex-start;
+    }
+
+    .pc-table {
+        display: none !important;
+    }
+
+    .workplace-container {
+        width: 100%;
+    }
+
+    .workplace-container > nav {
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 40px 0;
+    }
+
+    .workplace-container > nav > ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .workplace-container > nav > ul > li {
+        padding: 10px 0px;
+    }
+    .workplace-container > nav > ul > li > a {
+        color: #4aaecd;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 40px;
+        border: #4aaecd solid 1px;
+    }
+    .icon {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        z-index: 5;
+    }
+    .icon > a > img {
+        max-width: 60px;
+    }
+
+    .area1 {
+        width: 100%;
+        margin: 70px 0 0 0;
+    }
+    .area1 > .content {
+        width: 100%;
+    }
+    .area1 > .content > .banner-box {
+        width: 100%;
+        height: 400px;
+        background-image: url('/images/workplace-banner.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area1 > .content > .banner-box img {
+        width: 100%;
+    }
+    /* ----- */
+    .area2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area2 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area2 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        gap: 10px;
+    }
+    .area2 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area2 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area2 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area2 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area2 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area2 > .content > .container > .item-box > .item > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area2 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 40px 0 0 0px;
+    }
+
+    .area2 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area2 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area2 > .content > .container > ul > li {
+    }
+    .area2 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+    /* ----- */
+    .table-box {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .area3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area3 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area3 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        gap: 10px;
+    }
+    .area3 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area3 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area3 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area3 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area3 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area3 > .content > .container > .item-box > .item > img {
+        width: 100%;
+    }
+
+    .area3 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area3 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 40px 0 0 0px;
+    }
+
+    .area3 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area3 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area3 > .content > .container > ul > li {
+    }
+    .area3 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+    .area4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area4 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area4 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        gap: 10px;
+    }
+    .area4 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area4 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area4 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area4 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area4 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area4 > .content > .container > .item-box > .item > img {
+        width: 100%;
+    }
+
+    .area4 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area4 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 40px 0 0 0px;
+    }
+
+    .area4 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area4 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area4 > .content > .container > ul > li {
+    }
+    .area4 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+
+    .area5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area5 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area5 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        gap: 10px;
+    }
+    .area5 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area5 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area5 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area5 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area5 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area5 > .content > .container > .item-box > .item > img {
+        width: 100%;
+    }
+
+    .area5 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area5 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 40px 0 0 0px;
+    }
+
+    .area5 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area5 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area5 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+    .area5 .img-box {
+        width: 100%;
+    }
+    .area5 .img-box > img {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .area6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area6 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area6 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        gap: 10px;
+    }
+    .area6 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area6 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area6 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area6 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area6 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area6 > .content > .container > .item-box > .item > img {
+        width: 100%;
+    }
+
+    .area6 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area6 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 40px 0 0 0px;
+    }
+
+    .area6 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area6 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+
+    .area6 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .t-nowrap {
+        white-space: nowrap;
+    }
+
+    .t-l {
+        justify-content: flex-start;
+    }
+
+    .mobile-table {
+        display: none !important;
+    }
+
+    .workplace-container {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+    }
+
+    .workplace-container > nav {
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 40px 0;
+    }
+
+    .workplace-container > nav > ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workplace-container > nav > ul > li {
+        padding: 10px 30px;
+    }
+    .workplace-container > nav > ul > li > a {
+        color: #4aaecd;
+        text-align: center;
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 20px;
+        border: #4aaecd solid 1px;
+    }
+
+    .icon {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        z-index: 5;
+    }
+    .icon > a > img {
+        max-width: 60px;
+    }
+
+    .area1 {
+        width: 100%;
+    }
+    .area1 > .content {
+        width: 100%;
+    }
+    .area1 > .content > .banner-box {
+        width: 100%;
+        height: 500px;
+        background-image: url('/images/workplace-banner.png');
+        background-size: cover; /* 讓圖片覆蓋整個區域 */
+        background-position: center; /* 讓圖片居中 */
+        background-repeat: no-repeat; /* 防止圖片重複 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area1 > .content > .banner-box img {
+        width: 100%;
+    }
+    /* ----- */
+    .area2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 60px 0 0 0;
+    }
+
+    .area2 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area2 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 60px 0;
+        gap: 10px;
+    }
+    .area2 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 60px 0;
+    }
+
+    /* 底線 */
+    .area2 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area2 > .content > .container > .item-box {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area2 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area2 > .content > .container > .item-box > .item > .img-box {
+        width: 100%;
+    }
+    .area2 > .content > .container > .item-box > .item > .img-box > img {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .area2 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area2 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area2 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 60px 0 0 0px;
+    }
+
+    .area2 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area2 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area2 > .content > .container > ul > li {
+    }
+    .area2 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+
+    .area2 > .content > .container > .item-box > .table-box > p {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    .area2 > .content > .container > .item-box > .table-box > span {
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 20px 0;
+    }
+
+    /* ----------------- */
+    .area3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f8f8;
+        padding: 60px 0;
+    }
+
+    .area3 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area3 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 60px 0;
+        gap: 80px;
+    }
+    .area3 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 0 60px 0; */
+    }
+
+    /* 底線 */
+    .area3 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area3 > .content > .container > .item-box {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area3 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .area3 > .content > .container > .item-box > .item > .item-detail {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .area3 > .content > .container > .item-box > .item > .img-box {
+        width: 100%;
+    }
+    .area3 > .content > .container > .item-box > .item > .img-box > img {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .area3 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area3 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area3 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 60px 0 0 0px;
+    }
+
+    .area3 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area3 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area3 > .content > .container > ul > li {
+    }
+    .area3 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+
+    .area3 > .content > .container > .item-box > .table-box > p {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    .area3 > .content > .container > .item-box > .table-box > span {
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 20px 0;
+    }
+    /* ----- */
+    .area4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+    }
+
+    .area4 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area4 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 60px 0;
+        gap: 80px;
+    }
+    .area4 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 0 60px 0; */
+    }
+
+    /* 底線 */
+    .area4 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area4 > .content > .container > .item-box {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area4 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .area4 > .content > .container > .item-box > .item > .img-box {
+        width: 100%;
+    }
+    .area4 > .content > .container > .item-box > .item > .img-box > img {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .area4 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area4 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area4 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 60px 0 0 0px;
+    }
+
+    .area4 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area4 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area4 > .content > .container > ul > li {
+    }
+    .area4 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+
+    .area4 > .content > .container > .item-box > .table-box > p {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    .area4 > .content > .container > .item-box > .table-box > span {
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 20px 0;
+    }
+    .area5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area5 > .content {
+        width: calc(100% - 60px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area5 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        gap: 10px;
+    }
+    .area5 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    /* 底線 */
+    .area5 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area5 > .content > .container > .item-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area5 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area5 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area5 > .content > .container > .item-box > .item > img {
+        width: 100%;
+    }
+
+    .area5 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f8f8;
+        padding: 60px 0;
+    }
+
+    .area5 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area5 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 60px 0;
+        gap: 80px;
+    }
+    .area5 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 0 60px 0; */
+    }
+
+    /* 底線 */
+    .area5 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area5 > .content > .container > .item-box {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area5 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .area5 > .content > .container > .item-box > .item > .item-detail {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .area5 > .content > .container > .item-box > .item > .img-box {
+        width: 100%;
+    }
+    .area5 > .content > .container > .item-box > .item > .img-box > img {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .area5 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area5 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area5 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 60px 0 0 0px;
+    }
+
+    .area5 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area5 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area5 > .content > .container > ul > li {
+    }
+    .area5 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+
+    .area5 > .content > .container > .item-box > .table-box > p {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    .area5 > .content > .container > .item-box > .table-box > span {
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 20px 0;
+    }
+
+    .area6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+    }
+
+    .area6 > .content {
+        max-width: 1280px;
+        width: calc(100% - 400px);
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .area6 > .content > .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 60px 0;
+        gap: 80px;
+    }
+    .area6 > .content > .container > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 0 60px 0; */
+    }
+
+    /* 底線 */
+    .area6 > .content > .container > span::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #5db430;
+        margin-top: 5px;
+    }
+
+    .area6 > .content > .container > .item-box {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .area6 > .content > .container > .item-box > .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .area6 > .content > .container > .item-box > .item > .item-detail {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .area6 > .content > .container > .item-box > .item > .img-box {
+        width: 100%;
+    }
+    .area6 > .content > .container > .item-box > .item > .img-box > img {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .area6 > .content > .container > .item-box > .item > p {
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .area6 > .content > .container > .item-box > .item > p > a {
+        font-size: 18px;
+        line-height: 2em;
+        color: #4aaecd;
+    }
+
+    .area6 > .content > .container > a {
+        width: fit-content;
+        text-align: center;
+        background-color: #5db430;
+        color: #ffffff;
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 60px 0 0 0px;
+    }
+
+    .area6 > .content > .container > p {
+        text-align: center;
+    }
+
+    .area6 > .content > .container > ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #4aaecd;
+        gap: 40px;
+        margin: 40px 0 0 0;
+    }
+    .area6 > .content > .container > ul > li {
+    }
+    .area6 > .content > .container > ul > li > a {
+        color: #4aaecd;
+    }
+
+    .area6 > .content > .container > .item-box > .table-box > p {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    .area6 > .content > .container > .item-box > .table-box > span {
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 20px 0;
+    }
+}

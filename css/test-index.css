@@ -1,0 +1,937 @@
+@media screen and (max-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+    .index-container {
+        width: 100%;
+    }
+
+    .area1 {
+        width: 100%;
+        background-image: url('/images/home-bannner.png');
+        height: 800px;
+        position: relative;
+    }
+
+    .area1 > .content {
+        width: 100%;
+    }
+
+    .area1 > .content > .text-box {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: area1slide 1s ease-in-out forwards;
+    }
+
+    @keyframes area1slide {
+        0% {
+            left: -500px;
+            opacity: 0;
+        }
+        100% {
+            left: 40%;
+            opacity: 1;
+        }
+    }
+
+    .area1 > .content > .text-box > .title-1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #d17a0d;
+    }
+
+    .area1 > .content > .text-box > .title-2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #df7009;
+    }
+
+    .area1 > .content > .text-box > .title-3 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    /* --------- */
+    .area2 {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area2 > .content {
+        width: calc(100% - 600px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        z-index: 99;
+    }
+
+    .area2 > .content > .facebook > img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .area2 > .content > .circle {
+        background: radial-gradient(circle, rgba(216, 128, 28, 0.8) 40%, rgba(247, 182, 108, 0.05) 70%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 0;
+        top: -100px;
+        transition: transform 2s ease-in-out, width 1s ease-in-out, height 1s ease-in-out;
+        /* filter: saturate(1.2); 调整饱和度 */
+    }
+
+    .area2 > .content > .circle > img {
+        height: 300px;
+        position: absolute;
+        top: 120px;
+        right: 50px;
+    }
+
+    .circle.animate {
+        width: 400px !important; /* 原始大小的10倍 */
+        height: 400px !important; /* 原始大小的10倍 */
+    }
+    .area2 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: -90px;
+        left: -150px;
+    }
+
+    .area2 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area2 > .content > .title-box {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: -100px;
+        left: 0;
+        animation: area2_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area2_slideIn {
+        0% {
+            left: -500px;
+            opacity: 0;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area2 > .content > .title-box .title-1 {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area2 > .content > .title-box div {
+        display: flex;
+        align-items: flex-end;
+    }
+    .area2 > .content > .title-box .title-2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        margin: 0 10px 0 0;
+    }
+
+    .area2 > .content > .title-box .title-3 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area2 > .content > .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area2 > .content > .text-box {
+        width: 100%;
+    }
+
+    .area2 > .content > .text-box > p {
+        line-height: 2em;
+    }
+    .area2 > .content > .link {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0 0 0;
+    }
+
+    .area2 > .content > .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area2 > .content > .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area2 .content > .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .area2 > .content > .link > a > .more img {
+        width: 30px;
+    }
+
+    /* --------- */
+    .area3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 80px 0;
+    }
+
+    .area3 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area3 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #d17a0d, #ffffff);
+        z-index: -1; /* 確保背景在其他內容之下 */
+    }
+
+    .area3 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: 0;
+        left: -150px;
+    }
+
+    .area3 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area3 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area3 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area3 > .content > .title-box .title-1 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 100px;
+    }
+
+    .area3 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area3 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area3 > .content > .title-box .title-3 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area3 > .content .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area3 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin: 60px 0 0 0;
+    }
+
+    .area3 > .content > .item-box > .item {
+        width: calc((100% - 30px) / 4);
+    }
+
+    .area3 > .content > .item-box > .item > .img-box {
+        width: 100%;
+        position: relative; /* Ensure the overlay is positioned relative to the img-box */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+        z-index: 1; /* Set initial z-index to ensure it's above other content */
+    }
+
+    .area3 > .content > .item-box > .item > .img-box:hover {
+        transform: scale(1.2); /* Scale up the img-box */
+        z-index: 2; /* Increase z-index on hover to ensure it stays on top */
+    }
+
+    .area3 .item .img-box::after {
+        content: ''; /* Empty content for the overlay */
+        position: absolute; /* Absolute positioning to cover the img-box */
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(236, 174, 59, 0.5); /* Semi-transparent overlay */
+        opacity: 0; /* Start with the overlay invisible */
+        transition: opacity 0.3s ease-in-out; /* Smooth transition for the overlay appearance */
+    }
+    .area3 .item .img-box:hover::after {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .area3 .item .img-box .overlay-text {
+        width: 20px;
+        position: absolute; /* 绝对定位覆盖整个 img-box */
+        top: 40px;
+        right: 10px;
+        color: #000000; /* 文字颜色为白色 */
+        font-size: 16px; /* 文字大小可以根据需要调整 */
+        text-align: center; /* 文字居中 */
+        opacity: 0; /* 初始状态为不可见 */
+        transition: opacity 0.3s ease-in-out; /* 文字出现的过渡 */
+        pointer-events: none; /* 遮罩上的文字不影响鼠标事件 */
+        z-index: 10; /* Ensure text is above overlay */
+        font-weight: 700;
+    }
+    .area3 .item .img-box:hover .overlay-text {
+        opacity: 1; /* 鼠标悬停时显示文字 */
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+    }
+    .area3 > .content > .item-box > .item > .img-box > img {
+        width: 100%;
+        z-index: 100;
+    }
+
+    .area3 > .content > .item-box > .item > .item-title {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .area3 > .content > .item-box > .item > .item-title > img {
+        width: 100px;
+    }
+    .area3 > .content > .item-box > .item > .item-title > p {
+        font-weight: 700;
+    }
+
+    /* 奇數item */
+    .area3 > .content > .item-box > .odd {
+        margin: 20px 0 0 0;
+    }
+    .area3 > .content > .item-box > .odd > .item-title {
+        margin: 0 0 20px 0;
+    }
+
+    .area3 > .content > .item-box > .odd > .item-title > p {
+        margin: 0 -40px 20px 0;
+    }
+    /* 奇數item */
+
+    /* 偶數item */
+    .area3 > .content > .item-box > .even {
+    }
+    .area3 > .content > .item-box > .even > .item-title {
+        margin: 20px 0 0 0;
+    }
+
+    .area3 > .content > .item-box > .even > .item-title > p {
+        margin: 0 -40px 20px 0;
+    }
+    /* 偶數item */
+
+    /* --------- */
+
+    .area4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0;
+    }
+    .area4 > .content {
+        /* width: calc(100% - 600px); */
+        width: 100%;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --------- */
+    .area5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 80px 0;
+    }
+
+    .area5 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area5 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #f1a7a7, #f5a623);
+        z-index: -1; /* 確保背景在其他內容之下 */
+    }
+
+    .area5 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: 0;
+        left: -150px;
+    }
+
+    .area5 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area5 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area5 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area5 > .content > .title-box .title-1 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 100px;
+    }
+
+    .area5 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area5 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area5 > .content > .title-box .title-3 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area5 > .content .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area5 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 80px 0 0 0;
+    }
+
+    .area5 > .content > .item-box > .item {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area5 > .content > .item-box > .item > img {
+        width: 100%;
+    }
+
+    .area5 > .content > .item-box > .item > p {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 10px 0 0 0;
+    }
+
+    .area5 > .content > .link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 0 0;
+    }
+
+    .area5 > .content > .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area5 > .content > .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area5 .content > .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .area5 > .content > .link > a > .more img {
+        width: 30px;
+    }
+    /* --------- */
+    .area6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 200px 0;
+    }
+
+    .area6 > .content {
+        width: calc(100% - 600px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .area6 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: -90px;
+        left: -150px;
+    }
+
+    .area6 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area6 > .content > .title-box {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: -100px;
+        left: 0;
+        animation: area6_slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes area6_slideIn {
+        0% {
+            left: -500px;
+            opacity: 0;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .area6 > .content > .title-box .title-1 {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area6 > .content > .title-box div {
+        display: flex;
+        align-items: flex-end;
+    }
+    .area6 > .content > .title-box .title-2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        margin: 0 10px 0 0;
+    }
+
+    .area6 > .content > .title-box .title-3 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area6 > .content > .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 40px 0;
+    }
+
+    .area6 > .content > .link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+
+    .area6 > .content > .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area6 > .content > .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area6 .content > .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .area6 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        margin: 0 0 40px 0;
+        gap: 40px;
+    }
+
+    .area6 > .content > .item-box > .item {
+        width: 100%;
+    }
+    .area6 > .content > .item-box > .item > .img-box > img {
+        width: 100%;
+    }
+
+    .area6 > .content > .item-box > .item > .img-box {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area6 > .content > .item-box > .item > .text-box {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area6 > .content > .item-box > .item > .text-box > .tag {
+        font-weight: 700;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .area6 > .content > .item-box > .item > .text-box > .item-title {
+        margin: 0 0 10px 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .area6 > .content > .item-box > .item > .text-box > .item-intro {
+        height: 50px;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis; /* 将超出的文本变成省略号 */
+    }
+
+    .area6 > .content > .item-box > .item > .text-box > .item-more {
+        font-weight: 700;
+    }
+    .area6 > .content > .link > a > .more img {
+        width: 30px;
+    }
+
+    /* ------- */
+    .area7 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 80px 0;
+    }
+
+    .area7 > .content {
+        width: calc(100% - 400px);
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+    .area7 > .background-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #f1a7a7, #f5a623);
+        z-index: -1; /* 確保背景在其他內容之下 */
+    }
+
+    .area7 > .content > .arrow {
+        width: 90px;
+        position: absolute;
+        top: 0;
+        left: -150px;
+    }
+
+    .area7 > .content > .arrow > img {
+        width: 100%;
+    }
+
+    .area7 > .content > .title-box {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .area7 > .content > .title-box > .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area7 > .content > .title-box > .title > .container {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .area7 > .content > .title-box .title-1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area7 > .content > .title-box div {
+        display: flex;
+        align-items: flex-start;
+    }
+    .area7 > .content > .title-box .title-2 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+    }
+
+    .area7 > .content > .title-box .title-3 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #000000;
+        margin: 0 0 0 20px;
+    }
+
+    .area7 > .content .line {
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+        margin: 10px 0 20px 0;
+    }
+
+    .area7 > .content > .item-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin: 40px 0 0 0;
+    }
+
+    .area7 > .content > .item-box > .left {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #ffffff;
+    }
+
+    .area7 > .content > .item-box > .left > .info-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .area7 > .content > .item-box > .left > .info-box div {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .area7 > .content > .item-box > .left .info-line p {
+    }
+
+    .area7 > .content > .item-box > .left .line {
+        background-color: #ffffff;
+        margin: 40px 0;
+    }
+
+    .area7 > .content > .item-box > .right {
+        width: 66.6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .area7 > .content > .item-box > .right > img {
+        width: 100%;
+    }
+    .area7 > .content > .item-box > .left > .link {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 20px 0 0 0;
+    }
+
+    .area7 > .content > .item-box > .left .link > a {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e59100;
+        padding: 10px 20px;
+        border-radius: 0 40px 40px 0;
+        box-shadow: rgba(220, 228, 107, 0.959) 0px 5px 15px;
+    }
+
+    .area7 > .content > .item-box > .left .link > a > .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .area7 > .content > .item-box > .left .link > a > .more {
+    }
+    .area7 > .content > .item-box > .left .link > a p {
+        color: #ffffff;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .area7 > .content > .item-box > .left .link > a > .more img {
+        width: 30px;
+    }
+}

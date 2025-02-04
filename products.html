@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>志超科技股份有限公司</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/products.css" />
+
+        <style>
+            body {
+                position: relative;
+            }
+
+            #header {
+                background-color: transparent !important;
+                position: absolute;
+                top: 0;
+                z-index: 10;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input id="menu-control" type="checkbox" />
+        <header>
+            <label id="MenuControl" for="menu-control">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <a href="/">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="" />
+                    </div>
+                </a>
+
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li class="location-container">
+                            <a href="javascript:;" class="location">
+                                <span class="close">關於志超</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="info.html"> <span>公司簡介</span></a>
+                                </li>
+                                <li>
+                                    <a href="concept.html"> <span>經營理念</span></a>
+                                </li>
+                                <li>
+                                    <a href="location.html"> <span>營運據點</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <span>產品與服務</span>
+                            </a>
+                        </li>
+
+                        <li class="location-container">
+                            <a href="javascript:;" class="location">
+                                <span class="close">永續發展</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="sustainable.html"> <span>永續管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="green.html"> <span>綠色永續</span></a>
+                                </li>
+                                <li>
+                                    <a href="partner.html"> <span>合作夥伴</span></a>
+                                </li>
+                                <li>
+                                    <a href="management.html"> <span>公司治理</span></a>
+                                </li>
+                                <li>
+                                    <a href="workplace.html"> <span>幸福職場</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="tech.html">
+                                <span>技術與研發</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news.html">
+                                <span>活動訊息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span class="close">投資人專區</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="finance.html"> <span>近期財報</span></a>
+                                </li>
+                                <li>
+                                    <a href="revenue.html"> <span>每月營收</span></a>
+                                </li>
+                                <li>
+                                    <a href="major.html"> <span>重大訊息</span></a>
+                                </li>
+                                <li>
+                                    <a href="corporation.html"> <span>法人說明會資訊</span></a>
+                                </li>
+                                <li>
+                                    <a href="stock.html"> <span>股務資訊</span></a>
+                                </li>
+                                <li>
+                                    <a href="relationship.html"> <span>投資人聯絡窗口</span></a>
+                                </li>
+                                <li>
+                                    <a href="shareholder.html"> <span>主要股東名單</span></a>
+                                </li>
+                                <li>
+                                    <a href="dividend.html"> <span>歷年股利分派</span></a>
+                                </li>
+                                <li>
+                                    <a href="meeting.html"> <span>股東會資訊</span></a>
+                                </li>
+                                <li>
+                                    <a href="rules.html"> <span>公司重要規章制度</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="location-container">
+                            <a href="javascript:;" class="location">
+                                <span class="close">人力資源</span>
+                            </a>
+                            <ul class="pc-submenu">
+                                <li>
+                                    <a href="welfare.html"> <span>員工福利與照護</span></a>
+                                </li>
+                                <li>
+                                    <a href="recruitment.html"> <span>人才招募</span></a>
+                                </li>
+                                <li>
+                                    <a href="development.html"> <span>訓練與發展</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="news-container">
+            <div class="area1">
+                <div class="content">
+                    <div class="banner-box">
+                        <h2>產品與服務</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area2">
+                <span style="font-size: 28px">產品種類</span>
+                <div class="img-box fade">
+                    <img id="product-image" src="images/products14.png" alt="" />
+                </div>
+                <div class="background"></div>
+                <div class="content fade">
+                    <div class="container">
+                        <span id="product-title" style="font-size: 32px"><p>液晶顯示器用板</p></span>
+                        <div class="text-box" id="product-description">
+                            <p>●用於液晶電視、筆記型電腦、液晶監視器</p>
+                            <p>●2 ~ 6 層板</p>
+                            <p>●高尺寸精密度控制在+0.003" ~ -0.003"</p>
+                            <p>●低彎曲變形控制在 0.5%以下</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="prev-button"><img src="images/triangle1.png" alt="" /></button>
+                <button id="next-button"><img src="images/triangle.png" alt="" /></button>
+            </div>
+
+            <div class="area3">
+                <div class="content">
+                    <div class="container">
+                        <span style="font-size: 28px">品質系統認證</span>
+                        <div class="table-box">
+                            <table class="grey">
+                                <tr>
+                                    <td class="lightblue bg-grey bd-t-blue">證書</td>
+                                    <td class="lightblue bg-grey bd-t-blue">ISO 9001:2015</td>
+                                    <td class="lightblue bg-grey bd-t-blue">ISO 14001:2015</td>
+                                    <td class="lightblue bg-grey bd-t-blue">ISO 45001:2018</td>
+                                    <td class="lightblue bg-grey bd-t-blue">IATF 16949：2016</td>
+                                    <td class="lightblue bg-grey bd-t-blue">IECQ QC080000：2017</td>
+                                </tr>
+                                <tr>
+                                    <td class="bd-r-grey bd-b-grey">頒發組織</td>
+                                    <td class="bd-r-grey bd-b-grey">DNV.GL</td>
+                                    <td class="bd-r-grey bd-b-grey">DNV.GL</td>
+                                    <td class="bd-r-grey bd-b-grey">DNV.GL</td>
+                                    <td class="bd-r-grey bd-b-grey">DNV.GL</td>
+                                    <td class="bd-b-grey">DNV.GL</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-darkgrey bd-r-grey bd-b-grey">認證日期</td>
+                                    <td class="bg-darkgrey bd-r-grey bd-b-grey">2023/7/14</td>
+                                    <td class="bg-darkgrey bd-r-grey bd-b-grey">2023/7/13</td>
+                                    <td class="bg-darkgrey bd-r-grey bd-b-grey">2020/9/26</td>
+                                    <td class="bg-darkgrey bd-r-grey bd-b-grey">2023/9/28</td>
+                                    <td class="bg-darkgrey bd-b-grey">2021/7/5</td>
+                                </tr>
+                                <tr>
+                                    <td class="bd-r-grey bd-b-grey">有效期限</td>
+                                    <td class="bd-r-grey bd-b-grey">
+                                        <p>2023/7/26</p>
+                                        <p>~</p>
+                                        <p>2026/7/25</p>
+                                    </td>
+                                    <td class="bd-r-grey bd-b-grey">
+                                        <p>2023/7/24</p>
+                                        <p>~</p>
+                                        <p>2026/7/23</p>
+                                    </td>
+                                    <td class="bd-r-grey bd-b-grey">
+                                        <p>2021/11/10</p>
+                                        <p>~</p>
+                                        <p>2024/11/10</p>
+                                    </td>
+                                    <td class="bd-r-grey bd-b-grey">
+                                        <p>2023/9/27</p>
+                                        <p>~</p>
+                                        <p>2026/9/26</p>
+                                    </td>
+                                    <td class="bd-b-grey">
+                                        <p>2021/7/5</p>
+                                        <p>~</p>
+                                        <p>2024/8/1</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bd-r-grey">文件下載</td>
+                                    <td class="bd-r-grey">
+                                        <a
+                                            href="http://www.tpt-pcb.com.tw/pdf/new/ISO%209001%EF%BC%9A2015.pdf"
+                                            class="button"
+                                            >文件下載</a
+                                        >
+                                    </td>
+                                    <td class="bd-r-grey">
+                                        <a
+                                            href="http://www.tpt-pcb.com.tw/pdf/new/ISO%2014001%EF%BC%9A2015.pdf"
+                                            class="button"
+                                            >文件下載</a
+                                        >
+                                    </td>
+                                    <td class="bd-r-grey">
+                                        <a
+                                            href="http://www.tpt-pcb.com.tw/pdf/new/ISO%2045001%EF%BC%9A2018.pdf"
+                                            class="button"
+                                            >文件下載</a
+                                        >
+                                    </td>
+                                    <td class="bd-r-grey">
+                                        <a
+                                            href="http://www.tpt-pcb.com.tw/pdf/new/IATF%2016949%EF%BC%9A2016"
+                                            class="button"
+                                            >文件下載</a
+                                        >
+                                    </td>
+                                    <td>
+                                        <a
+                                            href="http://www.tpt-pcb.com.tw/pdf/new/IECQ%20QC080000%EF%BC%9A2017.pdf"
+                                            class="button"
+                                            >文件下載</a
+                                        >
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area3">
+                <div class="content">
+                    <div class="container">
+                        <span style="font-size: 28px">其他認證</span>
+                        <div class="table-box">
+                            <table class="grey">
+                                <tr>
+                                    <td class="lightblue bg-grey bd-t-blue">證書</td>
+                                    <td class="lightblue bg-grey bd-t-blue">安規認證</td>
+                                    <td class="lightblue bg-grey bd-t-blue">IPC member</td>
+                                </tr>
+                                <tr>
+                                    <td class="bd-r-grey bd-b-grey">頒發組織</td>
+                                    <td class="bd-r-grey bd-b-grey">UL</td>
+                                    <td class="bd-b-grey">IPC</td>
+                                </tr>
+                                <tr>
+                                    <td class="bg-darkgrey bd-r-grey bd-b-grey">認證日期</td>
+                                    <td class="bg-darkgrey bd-r-grey bd-b-grey">2020/5/27</td>
+                                    <td class="bg-darkgrey bd-b-grey">2004/10/31</td>
+                                </tr>
+                                <tr>
+                                    <td class="bd-r-grey bd-b-grey">有效期限</td>
+                                    <td class="bd-r-grey bd-b-grey">NA</td>
+                                    <td class="bd-b-grey">
+                                        <p>2004/10/31</p>
+                                        <p>~</p>
+                                        <p>2024/9/30</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bd-r-grey">文件下載</td>
+                                    <td class="bd-r-grey">
+                                        <a href="http://www.tpt-pcb.com.tw/pdf/new/UL.pdf" class="button">文件下載</a>
+                                    </td>
+                                    <td>
+                                        <a href="http://www.tpt-pcb.com.tw/pdf/new/IPC%20member.pdf" class="button"
+                                            >文件下載</a
+                                        >
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area4">
+                <div class="content">
+                    <div class="container" id="myDiv">
+                        <div class="item-box">
+                            <div class="item">
+                                <img src="images/products3.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products4.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products5.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products6.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products7.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products8.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products9.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products10.png" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="images/products11.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area5" id="contact-section">
+                <div class="content">
+                    <div class="container">
+                        <div class="left">
+                            <img src="images/products12.png" alt="" />
+                        </div>
+                        <div class="right">
+                            <p>聯絡洽詢</p>
+                            <span style="font-size: 48px; margin-bottom: 40px">業務處 趙榮華 副總</span>
+                            <div class="item" style="font-size: 24px">
+                                <p>公司：桃園市平鎮區 32461 平鎮工業區工業二路12號</p>
+                                <p>電話：886-3-4698860(代表號) </p>
+                                <p>傳真：886-3-4698277 </p>
+                                <p>電子郵件：george@tpt-pcb.com.tw</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="info.html">
+                                <span>關於志超</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <span>產品與服務</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sustainable.html">
+                                <span>永續發展</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tech.html">
+                                <span>技術與研發</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="news.html">
+                                <span>活動訊息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="stock.html">
+                                <span>投資人專區</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="welfare.html">
+                                <span>人力資源</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="logo">
+                        <img src="images/footer-logo.png" alt="" />
+                    </div>
+                    <div class="supplier-menu">
+                        <p>總公司及工廠地址：桃園市平鎮區 32461 平鎮工業區工業二路12號</p>
+                        <p>|</p>
+                        <p>電 話：886-3-4698860(代表號)</p>
+                        <p>|</p>
+                        <p>傳 真：886-3-4698277</p>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+    </body>
+    <script src="js/menu.js"></script>
+
+    <script>
+        const itemBoxes = document.querySelectorAll('.item-box')
+        const containerWidth = document.getElementById('myDiv').offsetWidth
+        const animationInterval = 10
+        const moveDistance = 2
+        let isPaused = false // 用于标记动画是否被暂停
+
+        itemBoxes.forEach((itemBox) => {
+            const itemBoxWidth = itemBox.offsetWidth
+            itemBox.style.position = 'absolute'
+            itemBox.style.left = containerWidth + 'px'
+
+            // 添加鼠标移入和移出事件监听器
+            itemBox.addEventListener('mouseenter', () => {
+                isPaused = true // 当鼠标移入时暂停动画
+            })
+
+            itemBox.addEventListener('mouseleave', () => {
+                isPaused = false // 当鼠标移出时恢复动画
+            })
+        })
+
+        function moveItemBoxes() {
+            if (!isPaused) {
+                // 只有当动画未暂停时才执行动画
+                itemBoxes.forEach((itemBox) => {
+                    let left = parseFloat(itemBox.style.left)
+
+                    if (left <= -itemBox.offsetWidth) {
+                        itemBox.style.left = containerWidth + 'px'
+                    } else {
+                        itemBox.style.left = left - moveDistance + 'px'
+                    }
+                })
+            }
+            setTimeout(moveItemBoxes, animationInterval)
+        }
+
+        moveItemBoxes()
+    </script>
+    <!-- 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const images = [
+                'images/products14.png',
+                'images/products15.png', // Add more image paths here
+            ]
+
+            const titles = [
+                '液晶顯示器用板',
+                'HDI', // Add more titles here
+            ]
+
+            const descriptions = [
+                [
+                    '●用於液晶電視、筆記型電腦、液晶監視器',
+                    '●2 ~ 6 層板',
+                    '●高尺寸精密度控制在+0.003" ~ -0.003"',
+                    '●低彎曲變形控制在 0.5%以下',
+                ],
+                ['●6 ~ 12 層板', '●液晶高階顯示器'],
+            ]
+
+            let currentIndex = 0
+
+            const productImage = document.getElementById('product-image')
+            const productTitle = document.getElementById('product-title')
+            const productDescription = document.getElementById('product-description')
+            const contentElements = document.querySelectorAll('.fade')
+
+            function updateContent(index) {
+                productImage.src = images[index]
+                productTitle.textContent = titles[index]
+                productDescription.innerHTML = descriptions[index].map((text) => `<p>${text}</p>`).join('')
+            }
+
+            function fadeOutContent(callback) {
+                contentElements.forEach((el) => el.classList.add('fade-out'))
+                setTimeout(callback, 500) // match the CSS transition duration
+            }
+
+            function fadeInContent() {
+                contentElements.forEach((el) => el.classList.remove('fade-out'))
+            }
+
+            document.getElementById('prev-button').addEventListener('click', () => {
+                fadeOutContent(() => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length
+                    updateContent(currentIndex)
+                    fadeInContent()
+                })
+            })
+
+            document.getElementById('next-button').addEventListener('click', () => {
+                fadeOutContent(() => {
+                    currentIndex = (currentIndex + 1) % images.length
+                    updateContent(currentIndex)
+                    fadeInContent()
+                })
+            })
+
+            // Initialize the content
+            updateContent(currentIndex)
+        })
+    </script> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const images = [
+                'images/products14.png',
+                'images/products15.png',
+                'images/CEM3.png',
+                'images/Al.png',
+                'images/LED.png',
+                'images/laptop.png',
+            ]
+
+            const titles = ['液晶顯示器用板', 'HDI', 'CEM3', '鋁基板', 'LED板', '筆記型電腦用板']
+
+            const descriptions = [
+                [
+                    '● 用於液晶電視、筆記型電腦、液晶監視器',
+                    '● 2 ~ 6 層板',
+                    '● 高尺寸精密度控制在+0.003" ~ -0.003"',
+                    '● 低彎曲變形控制在 0.5%以下',
+                ],
+                ['● 6 ~ 12 層板', '● 晶高階顯示器'],
+                ['● 顯示器背光模組', '● 照明模組'],
+                ['● 顯示器背光模組', '● 照明模組', '●  燈具需要高散熱材質'],
+                ['● 顯示器背光模組', '● 照明模組'],
+                ['● 6 ~ 12 層板'],
+            ]
+
+            let currentIndex = 0
+
+            const productImage = document.getElementById('product-image')
+            const productTitle = document.getElementById('product-title')
+            const productDescription = document.getElementById('product-description')
+            const contentElements = document.querySelectorAll('.fade')
+
+            function updateContent(index) {
+                productImage.src = images[index]
+                productTitle.textContent = titles[index]
+                productDescription.innerHTML = descriptions[index].map((text) => `<p>${text}</p>`).join('')
+            }
+
+            function slideOutContent(direction, callback) {
+                const slideClass = direction === 'left' ? 'slide-out-left' : 'slide-out-right'
+                contentElements.forEach((el) => el.classList.add(slideClass))
+                setTimeout(callback, 500) // match the CSS transition duration
+            }
+
+            function slideInContent(direction) {
+                const slideClass = direction === 'left' ? 'slide-in-right' : 'slide-in-left'
+                contentElements.forEach((el) => {
+                    el.classList.remove('slide-out-left', 'slide-out-right')
+                    el.classList.add(slideClass)
+                })
+                setTimeout(() => {
+                    contentElements.forEach((el) => el.classList.remove(slideClass))
+                }, 500) // match the CSS transition duration
+            }
+
+            document.getElementById('prev-button').addEventListener('click', () => {
+                slideOutContent('left', () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length
+                    updateContent(currentIndex)
+                    slideInContent('right')
+                })
+            })
+
+            document.getElementById('next-button').addEventListener('click', () => {
+                slideOutContent('right', () => {
+                    currentIndex = (currentIndex + 1) % images.length
+                    updateContent(currentIndex)
+                    slideInContent('left')
+                })
+            })
+
+            // Initialize the content
+            updateContent(currentIndex)
+        })
+    </script>
+
+    <!-- 圖片替換 -->
+    <script>
+        function updateBannerImage() {
+            var img = document.getElementById('banner-image')
+            if (window.innerWidth < 768) {
+                img.src = 'images/m-products-banner.png'
+            } else {
+                img.src = 'images/products-banner.png'
+            }
+        }
+
+        window.addEventListener('resize', updateBannerImage)
+        window.addEventListener('load', updateBannerImage)
+    </script>
+</html>
